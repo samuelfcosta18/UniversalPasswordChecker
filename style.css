@@ -67,3 +67,22 @@ button {
     background-color: #038f00;
     width: 100%;
 }
+@media only screen and (max-device-width: 480px) {
+main {
+    background-color: #fff;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 40vh 0 0 20px;
+}
+input.inputs {
+    height: 50px;
+    width: 200px;
+}
+.security-indicator {
+    height: 10px;
+    width: 50%;
+    margin-left: 100px;
+}
+}
