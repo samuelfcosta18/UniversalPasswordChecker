@@ -67,3 +67,18 @@ button {
     background-color: #038f00;
     width: 100%;
 }
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+    main{
+        width: 80vw;
+        height: auto;
+        margin: 30vh 0 0 10vw;
+    }
+    input.inputs {
+        width: 45vw;
+    }
+    button#botao1 {
+        width: 20vw;
+    }
+    button:hover {
+        transform: none;
+    }
