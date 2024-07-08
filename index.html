@@ -11,16 +11,13 @@
     <main>
         <p>Universal password checker</p>
         <span id="span">Preencha este campo!</span>
-        <input type="text" name="password" class="inputs" id="password" placeholder="Insert your password here" value=""/>
+        <input type="text" name="password" class="inputs" id="password" placeholder="Insert your password here" value="" oninput="checkPassword()"/>
         <br>
         <br>
         <input type="text" name="force" class="inputs" id="forca" value="" readonly/>
         <div class="security-indicator">
         <div id="security-indicator-bar" class="bar"></div>
         </div>
-        <br>
-        <br>
-        <button type="button" onclick="checkPassword()">Check</button>
     </main>
 </body>
 </html>

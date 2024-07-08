@@ -1,7 +1,7 @@
 function checkPassword() {
     password = document.querySelector("#password").value
     pattern1 = /[a-z]/
-    pattern2 = /[A-z0-9]/
+    pattern2 = /[A-Z0-9]/
     pattern3 = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
     result = document.querySelector("#forca")
     bar = document.querySelector("#security-indicator-bar")
