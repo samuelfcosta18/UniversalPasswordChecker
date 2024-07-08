@@ -1,0 +1,69 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    background-color: blue;
+}
+main {
+    background-color: #fff;
+    width: 30vw;
+    height: 35vh;
+    border-radius: 5px;
+    margin: 40vh 0 0 35vw;
+    text-align: center;
+}
+#span {
+    display: none;
+}
+p {
+    padding-top: 2vh;
+    font-size: 20px;
+    font-weight: 600;
+}
+input.inputs {
+    border: 1px solid black;
+    height: 5vh;
+    width: 15vw;
+    border-radius: 5px;
+}
+button {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #00ffd5;
+    color: #000000;
+    height: 5vh;
+    width: 5vw;
+    cursor: pointer;
+}
+.security-indicator {
+    height: 10px;
+    width: 50%;
+    background-color: #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: 7.5vw;
+}
+
+.security-indicator .bar {
+    height: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all 0.2s;
+}
+.security-indicator .bar.completed {
+    border-top-right-radius: 0;
+}
+
+.security-indicator .bar.critical {
+    background-color: #eb5757;
+    width: 10%;
+}
+.security-indicator .bar.safe {
+    background-color: #00ff00;
+    width: 70%;
+}
+.security-indicator .bar.strong {
+    background-color: #038f00;
+    width: 100%;
+}
