@@ -1,39 +1,25 @@
 *, ::after, ::before {
     box-sizing: border-box;
 }
-body {
-    background-color: blue;
-}
 main {
     background-color: #fff;
     width: 30vw;
     height: 35vh;
     border-radius: 5px;
-    margin: 40vh 0 0 35vw;
+    margin: 35vh 0 0 35vw;
     text-align: center;
-}
-#span {
-    display: none;
 }
 p {
     padding-top: 2vh;
     font-size: 20px;
     font-weight: 600;
+    text-decoration: underline;
 }
 input.inputs {
     border: 1px solid black;
     height: 5vh;
     width: 15vw;
     border-radius: 5px;
-}
-button {
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: #00ffd5;
-    color: #000000;
-    height: 5vh;
-    width: 5vw;
-    cursor: pointer;
 }
 .security-indicator {
     height: 10px;
@@ -67,14 +53,34 @@ button {
     background-color: #038f00;
     width: 100%;
 }
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
 @media only screen and (max-device-width: 480px) {
 main {
     background-color: #fff;
     width: 400px;
-    height: 300px;
+    height: 250px;
     border-radius: 5px;
     text-align: center;
-    margin: 40vh 0 0 20px;
+    margin: 35vh 0 0 20px;
 }
 input.inputs {
     height: 50px;
