@@ -61,6 +61,17 @@ input.inputs {
     animation: rainbow_animation 3s ease-in-out infinite;
     background-size: 400% 100%;
 }
+.labels {
+    transition: all 200ms;
+}
+.deactivated {
+    color: #ff0000;
+    font-size: 12px;
+}
+.activated {
+    color: #00ff00;
+    font-size: 12px;
+}
 
 @keyframes rainbow_animation {
 
@@ -80,7 +91,7 @@ main {
     height: 250px;
     border-radius: 5px;
     text-align: center;
-    margin: 35vh 0 0 20px;
+    margin: 35vh 0 0 10px;
 }
 input.inputs {
     height: 50px;
