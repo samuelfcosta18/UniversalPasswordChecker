@@ -15,8 +15,19 @@ function checkPassword() {
     label3 = document.querySelector("#label3")
     label4 = document.querySelector("#label4")
 
+    if (password.length === 0) {
+        result.value = "no password inserted"
+        console.log("no password inserted")
+        bar.classList.remove("critical")
+        bar.classList.remove("strong")
+        bar.classList.remove("safe")
+        checkbox1.removeAttribute("checked")
+        label1.classList.remove("activated")
+        label1.classList.add("deactivated")
+    }
+
     if (pattern1.test(password) == true || password.length <= 8) {
-        document.querySelector("#forca").style.color ="#ff0000"
+        result.style.color ="#ff0000"
         result.value = "weak"
         console.log("weak")
         //Labels turning red
@@ -44,9 +55,9 @@ function checkPassword() {
         bar.classList.remove("strong")
         bar.classList.remove("safe")
         bar.classList.add("critical")
-    } 
-    if (pattern2.test(password) == true && password.length >= 9) {
-        document.querySelector("#forca").style.color="#00ff00"
+    }
+    if (pattern2.test(password) == true) {
+        result.style.color="#00ff00"
         result.value = "safe"
         console.log("safe")
         label2.classList.add("activated")
@@ -57,8 +68,8 @@ function checkPassword() {
         bar.classList.remove("strong")
         bar.classList.add("safe")
     }
-    if (pattern3.test(password) == true) {
-        document.querySelector("#forca").style.color = "#00ff00"
+    if (pattern3.test(password) == true && password.length >= 10) {
+        result.style.color = "#00ff00"
         result.value = "safe"
         console.log("safe")
 
@@ -70,15 +81,18 @@ function checkPassword() {
         bar.classList.remove("strong")
         bar.classList.add("safe")
     }
-    if (pattern4.test(password) == true) {
-        document.querySelector("#forca").style.color ="#038f00"
+    if (pattern4.test(password) == true && pattern3.test(password) == true && pattern2.test(password) == true) {
+        result.style.color ="#038f00"
         result.value = "strong"
         console.log("strong")
-        label3.classList.add("activated")
-        label3.classList.remove("deactivated")
-        checkbox3.setAttribute("checked", "true")
+        
         bar.classList.add("strong")
         bar.classList.remove("safe")
         bar.classList.remove("critical")
+    }
+    if (pattern4.test(password) == true) {
+        label3.classList.add("activated")
+        label3.classList.remove("deactivated")
+        checkbox3.setAttribute("checked", "true")
     }
 }
