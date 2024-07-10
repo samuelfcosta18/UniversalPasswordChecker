@@ -45,8 +45,12 @@ input.inputs {
     background-color: #eb5757;
     width: 10%;
 }
-.security-indicator .bar.safe {
+.security-indicator .bar.good {
     background-color: #00ff00;
+    width: 25%;
+}
+.security-indicator .bar.safe {
+    background-color: #29c429; 
     width: 70%;
 }
 .security-indicator .bar.strong {
