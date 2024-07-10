@@ -16,7 +16,7 @@ function checkPassword() {
     label4 = document.querySelector("#label4")
 
 
-    if (pattern1.test(password) == true || password.length <= 8) {
+    if (pattern1.test(password) == true) {
         result.style.color ="#ff0000"
         result.style.border = "2px solid #ff0000"
         result.value = "weak"
@@ -47,6 +47,12 @@ function checkPassword() {
         bar.classList.remove("safe")
         bar.classList.remove("good")
         bar.classList.add("critical")
+    } else{
+        checkbox1.removeAttribute("checked")
+        bar.classList.remove("critical")
+        result.value = "no password inserted"
+        label1.classList.remove("activated")
+        label1.classList.add("deactivated")
     }
     if (pattern2.test(password) == true && pattern1.test(password) == true) {
         result.style.color="#00ff00"
