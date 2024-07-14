@@ -3,20 +3,12 @@
 }
 main {
     background-color: #fff;
-    width: 30vw;
+    width: 35vw;
     height: 35vh;
     border-radius: 5px;
     margin: 35vh 0 0 35vw;
     text-align: center;
 }
-
-p {
-    margin-top: 24px;
-    margin-right: 48px;
-    margin-bottom: 24px;
-    margin-left: 48px;
-}
-
 p {
     padding-top: 2vh;
     font-size: 20px;
@@ -31,11 +23,11 @@ input.inputs {
 }
 .security-indicator {
     height: 10px;
-    width: 50%;
+    width: 43%;
     background-color: #ddd;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    margin-left: 7.5vw;
+    margin-left: 10vw;
 }
 
 .security-indicator .bar {

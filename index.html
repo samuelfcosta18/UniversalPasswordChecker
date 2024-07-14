@@ -10,9 +10,12 @@
 
 </head>
 <body class="rainbow_text_animated">
-
+    <select id="language" onchange="changeLanguage()">
+        <option value="portuguese">pt-BR</option>
+        <option value="english" selected>en-US</option>
+    </select>
     <main>
-        <p class="rainbow_text_animated">Universal password checker</p>
+        <p class="rainbow_text_animated" id="title">Universal password checker</p>
         <form method="post" name="form">
         <input type="text" name="password" class="inputs" id="password" placeholder="Insert your password here" value="" oninput="checkPassword()"/>
         <br>
